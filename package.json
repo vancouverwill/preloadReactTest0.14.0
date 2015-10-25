@@ -1,0 +1,18 @@
+{
+  "name": "react-portfolio",
+  "version": "0.0.0",
+  "description": "Code from the React portfolio.",
+  "main": "server.js",
+  "dependencies": {
+    "classnames": "*",
+    "envify": "*",
+    "react": "^0.14.0",
+    "react-dom": "*",
+    "react-tools": "*",
+    "react-preload": "^0.2.2"
+    },
+  "devDependencies": {
+    "babelify": "^6.3.0",
+    "watchify": "^3.4.0"
+  }
+}
