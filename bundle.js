@@ -49,7 +49,7 @@ var ProjectsLoader = React.createClass({
 
 ReactDOM.render(React.createElement(ProjectsLoader, null), document.getElementById('container'));
 
-// bleow I commented out the simplest test of the code
+// below I commented out the simplest test of the code
 
 /*
   var _handleImageLoadError = function() {
