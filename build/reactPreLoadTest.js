@@ -3,8 +3,8 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var Container = React.createClass({
-  displayName: 'Container',
+var SimpleTestClass = React.createClass({
+  displayName: 'SimpleTestClass',
 
   getInitialState: function getInitialState() {
     return {};
@@ -17,8 +17,6 @@ var Container = React.createClass({
     );
   }
 });
-
-ReactDOM.render(React.createElement(Container, null), document.getElementById('container'));
 
 var loadingIndicator = React.createElement(
   'div',
@@ -47,7 +45,6 @@ var ProjectsLoader = React.createClass({
     var images = ["images/brazil1.jpg", "images/brazil2.jpg"];
 
     var Preload = require('react-preload').Preload;
-    // var Preload = require('react-preload');
 
     return React.createElement(
       Preload,
@@ -60,6 +57,7 @@ var ProjectsLoader = React.createClass({
         resolveOnError: true,
         mountChildren: true
       },
+      React.createElement(SimpleTestClass, null),
       React.createElement(
         'h2',
         null,
@@ -70,6 +68,8 @@ var ProjectsLoader = React.createClass({
 });
 
 ReactDOM.render(React.createElement(ProjectsLoader, null), document.getElementById('container'));
+
+// bleow I commented out the simplest test of the code
 
 /*
   var _handleImageLoadError = function() {

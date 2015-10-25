@@ -18,3 +18,5 @@ when all the files are ready start the program with
 `
 php server.php
 `
+
+then go to http://localhost:4000

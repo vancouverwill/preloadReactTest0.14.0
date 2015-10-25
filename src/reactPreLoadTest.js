@@ -2,7 +2,7 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 
 
-var Container = React.createClass({
+var SimpleTestClass = React.createClass({
             getInitialState: function() {
               return {
  
@@ -18,18 +18,14 @@ var Container = React.createClass({
         });
 
 
-	ReactDOM.render(
-          <Container />
-          ,
-        document.getElementById('container')
-      );
+
 
   var loadingIndicator = (<div>Loading...</div>)
   var images = ["images/brazil1.jpg","images/brazil2.jpg"];
 
   var Preload = require('react-preload').Preload;
 
-var ProjectsLoader = React.createClass({
+  var ProjectsLoader = React.createClass({
         getInitialState: function() {
                 return {
                 };
@@ -46,7 +42,6 @@ var ProjectsLoader = React.createClass({
           var images = ["images/brazil1.jpg","images/brazil2.jpg"];
 
           var Preload = require('react-preload').Preload; 
-          // var Preload = require('react-preload'); 
 
           return (
             <Preload
@@ -58,6 +53,7 @@ var ProjectsLoader = React.createClass({
               resolveOnError={true}
               mountChildren={true}
               >
+                <SimpleTestClass />
                 <h2>hola amigo</h2>
             </Preload>
             )
@@ -72,6 +68,8 @@ ReactDOM.render(
 );
 
 
+
+// bleow I commented out the simplest test of the code
 
 /*
   var _handleImageLoadError = function() {
